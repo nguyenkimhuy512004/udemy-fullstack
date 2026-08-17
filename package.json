@@ -1,0 +1,28 @@
+{
+  "name": "full-backend-zero",
+  "version": "1.0.0",
+  "description": "kim huy fullstack backend zero",
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "homepage": "https://github.com/nguyenkimhuy512004/udemy-fullstack#readme",
+  "bugs": {
+    "url": "https://github.com/nguyenkimhuy512004/udemy-fullstack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenkimhuy512004/udemy-fullstack.git"
+  },
+  "license": "ISC",
+  "author": "kim huy",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "5.2.1"
+  }
+}
