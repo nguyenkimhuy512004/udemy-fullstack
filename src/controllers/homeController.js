@@ -2,20 +2,12 @@
 const connection = require('../config/database');
 
 const getHomepage = (req, res) => {
+    return res.render('home.ejs');
+}
 
-    let users = [];
-
-    connection.query(
-        'select * From  Users u',
-        function (err, results, fields) {
-            users = results;
-            console.log(">>>results homePage = ", results)
-
-            //console.log(">> check users; ", users)
-            res.send(JSON.stringify(users))
-
-        }
-    );
+const postCreateUser = (req, res) => {
+    console.log(">> req.body: ", req.body)
+    res.send('create a new user')
 }
 
 const getABC = (req, res) => {
@@ -27,5 +19,5 @@ const gethoikimhuy = (req, res) => {
 }
 
 module.exports = {
-    getHomepage, getABC, gethoikimhuy
+    getHomepage, getABC, gethoikimhuy, postCreateUser
 }
